@@ -75,7 +75,7 @@
     preservenativescrolling: true,
     railoffset: false,
     railhoffset: false,
-    railequalscursorwidth: "false",
+    cursorbackgroundimage: "none",
     railwidth: 10,
     bouncescroll: true,
     spacebarenabled: true,
@@ -844,7 +844,8 @@
           'background-clip': 'padding-box',
           '-webkit-border-radius': self.opt.cursorborderradius,
           '-moz-border-radius': self.opt.cursorborderradius,
-          'border-radius': self.opt.cursorborderradius
+          'border-radius': self.opt.cursorborderradius,
+          'background-image': self.opt.cursorbackgroundimage
         });
 
         cursor.hborder = parseFloat(cursor.outerHeight() - cursor.innerHeight());
